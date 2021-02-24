@@ -24,6 +24,7 @@
                 parent.removeAttribute('active');
                 parent.classList.remove('active');
                 parent.parentNode.querySelector('.sublist').classList.remove("show");
+                
             }
             else {
                 ResetSidebarItems(); 
@@ -35,7 +36,7 @@
     });
 })();
 
-// resetarea claselor pentru elementele barei de navigare
+// resetarea claselor pentru elementele barei de navigare !
 function ResetSidebarItems () {
     var classOpen = document.querySelectorAll('.navbar-main-link-container.active')[0];
 
