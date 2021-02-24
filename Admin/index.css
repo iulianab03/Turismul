@@ -1,0 +1,263 @@
+body {
+    font-family: FontAwesome, 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.top-bar {
+    background:#264d73;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 10px 20px 40px;
+}
+
+.top-bar-logo-container  {
+    display: inline-block;
+}
+
+
+.admin-menu-header {
+    display: inline-block;
+    margin-left: 40px;
+    width: calc(100% - 250px);
+}
+.admin-menu-header .admin-menu-option {
+    text-decoration: none;
+    color: #BBBBBB;
+    margin-right: 10px;
+}
+
+#page-content {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+#login-form {
+    display: inline-block;
+}
+
+#login-form .form-row {
+    margin-bottom: 10px;
+}
+
+#login-form .form-label, #login-form .form-value{
+    display: inline-block;
+}
+
+#login-form .form-label {
+    width: 100px;
+    text-align: right;
+}
+
+.form-input {
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    padding: 6px 10px;
+    
+}
+.form-input::placeholder {
+    font-style: italic;
+}
+
+.form-button {
+    background-color: #21ad46;
+    border: 1px solid #138030;
+    border-radius: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 8px 14px;
+}
+.form-button:hover {
+    background-color: #1cd44d;
+}
+
+.form-error {
+    color: #F30000;
+}
+
+.list-body {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.locatie {
+    box-shadow: 0px 0px 3px #777777;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 8px;
+    text-align: left;
+}
+
+.locatie-buton {
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.locatie-buton.edit {
+    background-color: #1c59d4;
+    border: 1px solid #1544a3;
+    color: #FFFFFF;
+}
+
+.locatie-buton.edit:hover {
+    background-color: #1544a3;
+}
+
+.locatie-buton.stergere {
+    background-color: #F30000;
+    border: 1px solid #a31528;
+    color: #FFFFFF;
+    float: right;
+}
+.locatie-buton.stergere:hover {
+    background-color: #a31528;
+}
+
+.locatie-buton.adauga {
+    color: #FFFFFF;
+    border: 1px solid #0e8724;
+    background-color: #10a32b;
+}
+
+.locatie-buton.save:hover {
+    color: #FFFFFF;
+    background-color: #0e8724;
+}
+
+.locatie .locatie-titlu {
+    font-size: 15x;
+    font-weight: bold;
+}
+
+.locatie .locatie-creat {
+    font-size: 14px;
+}
+
+.locatie .locatie-creat span{
+    font-style: italic;
+}
+
+.locatie .locatie-actions{
+    margin-top: 10px;
+}
+
+.form-editare {
+    display: inline-block;
+    max-width: 700px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-editare .form-editare-row{
+    margin-bottom: 10px;
+}
+
+.form-editare .form-editare-row .form-editare-row-label{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+}
+.form-editare .form-editare-row .form-editare-row-value{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+
+.form-editare-input {
+    border: 1px solid #888888;
+    padding: 4px 8px;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+textarea.form-editare-input {
+    max-width: 800px;
+    max-height: 500px;
+
+    min-width: 200px;
+    min-height: 100px;
+    height: 200px;
+    width: 400px;
+}
+
+.form-button  {
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.form-button.save {
+    color: #FFFFFF;
+    background-color: #10a32b;
+}
+.form-button.save:hover {
+    color: #FFFFFF;
+    background-color: #0e8724;
+}
+
+.form-image {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.form-image .form-image-preview{
+    display: inline-block;
+    height: 150px;
+    width: auto;
+}
+.form-image .form-image-input{
+    display: none;
+}
+
+.removeImage {
+    background-color: #00000066;
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 13px;
+    font-size: 18px;
+
+
+    bottom: 5px;
+    left: -20px;
+    position: relative;
+}
+
+.form-error,.list-error {
+    display: block;
+    color: #F30000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#addUser {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 10px;
+}
+
+#addUser:hover {
+    color: #FFFFFF;
+    background-color: #0e8724;
+}
+
+.list-form {
+    display: none;
+}
+
+.list-form .form-button {
+    margin-left: 20px;
+}
