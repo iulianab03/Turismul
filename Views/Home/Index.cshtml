@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+
+        body {
+            text-align: center;
+            background-color: #fcf7f9;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .title {
+            color: #823755;
+        }
+
+        p {
+            margin-left: 20px;
+        }
+
+        .group p {
+            margin: 4px 12px;
+        }
+
+        .group {
+            border: 1px dotted #9e4c6d;
+            position: relative;
+            background-color: white;
+            margin: 15px 15px 10px;
+            width: 205px;
+            display: inline-block;
+            vertical-align: top;
+            height: 285px;
+        }
+
+        .group:hover {
+            border: 1px solid #9e4c6d;
+        }
+
+        .group img {
+            width: 100%;
+            height: 140px;
+        }
+
+        .nume {
+            width: 100%;
+            font-weight: 600;
+            position: absolute;
+            background-color: #c26d8f;
+            color: white;
+        }
+
+        .item {
+            background-color: white;
+            text-align: center;
+            padding: 35px 5px;
+            padding-bottom: 0;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        a:link, a:visited, a:hover, a:active {
+            color: black;
+            text-decoration: none;
+        }
+
+   
+
+</style>
+
+
+@foreach (var b in ViewBag.Compozities)
+{
+
+<div class="group">
+    <img src="@b.Poza" />
+    <div class="nume"><p>@b.Denumire</p></div>
+    <div class="item">@b.Pret <br /> 
+                      @b.Dataaducerii.ToString("dd/MM/yyyy")</div>
+     <button><a href="/Home/Afisare/@b.FloriId">Sterge</a></button>
+     <button><a href="/Home/Modificare/@b.FloriId">Modificare</a></button>
+    <button><a href="/Home/Adauga/@b.FloriId">Adauga</a></button>
+</div>
+
+}
